@@ -17,7 +17,7 @@ LBL = {"ND": "NO DEM.\nkVA", "APP": "APP.\nkVA", "LTG": "LTG.\nkVA", "DEM": "DEM
 OTHER = {"TRIP": "TRIP\nPOLE", "TYPE": "BRKR\nTYPE", "COND": "CON-\nDUIT",
          "WIRE": "WIRE", "DESC": "DESCRIPTION", "CKT": "CKT"}
 
-c = canvas.Canvas("out/E-2 Panel Schedules - 3085 Fort Charles Dr.pdf", pagesize=(W, H))
+c = canvas.Canvas("out/E-2 Panel Schedules - 789 Placeholder Dr.pdf", pagesize=(W, H))
 box(c, M, M, W - 2 * M, H - 2 * M, lw=1.6)
 
 

@@ -1,6 +1,6 @@
 """Shared drawing helpers for the Always On Generators permit sheets.
 
-THIS COPY IS POPULATED FOR: 1912 Jung Blvd E, Naples FL 34120 (Collier County)
+THIS COPY IS POPULATED FOR: 123 Example St, Naples FL 34120 (Collier County)
                             NEW PERMIT - electric only: portable generator power inlet +
                             Square D RCGK2 interlock in the existing 200 A meter-main
 AOG stamps these sheets, so NO licence numbers print and a clear
@@ -11,6 +11,8 @@ import os as _os
 
 from reportlab.lib.colors import Color, black, white
 from reportlab.pdfgen import canvas
+
+_os.makedirs("out", exist_ok=True)   # every sheet writes into ./out/
 
 # ------------------------------------------------------------------ job date
 # The permit is dated the day the package is built. Every sheet reads these
@@ -39,7 +41,7 @@ CORRECTION = ("CORRECTION RESPONSE TO THE PLAN REVIEW COMMENTS DATED %s."
 
 # ---------------------------------------------------------------- job data
 JOB = dict(
-    addr="1912 JUNG BLVD E",
+    addr="123 EXAMPLE ST",
     city="NAPLES, FLORIDA 34120",
     proj="PORTABLE GENERATOR INLET & INTERLOCK",
     ahj="COLLIER COUNTY",
@@ -173,7 +175,7 @@ CITATION_MOVES = {
                       "primary power source, it is listed or field-labeled for "
                       "the application, and it has enough overcurrent devices "
                       "to protect from all sources. FOUND ON A SHEET THE WRONG "
-                      "WAY ROUND — the 112 1st Ave N generator riser printed "
+                      "WAY ROUND — the 101 Demo Ave N generator riser printed "
                       "705.170 three times on a sheet whose title block says "
                       "NEC 2020. A 2023 number on a 2020 sheet is the same "
                       "defect as a 2020 number on a 2023 sheet, and "
@@ -271,7 +273,7 @@ CITATION_MOVES = {
     # findings below were errors on a delivered sheet.
     _dt.date(2023, 12, 31): dict(
         source="NFPA 70 (2020) read on link.nfpa.org — Articles 445, 705 and "
-               "706 in full on 09-23-2026, against the 112 1st Ave N job: a "
+               "706 in full on 09-23-2026, against the 101 Demo Ave N job: a "
                "48 kW set feeding three EG4 GridBOSS generator ports behind a "
                "microgrid interconnect device, no ATS anywhere in the job.",
         moves=[],

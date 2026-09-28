@@ -1,0 +1,6 @@
+reportlab
+pypdf
+pikepdf
+numpy
+Pillow
+cairosvg

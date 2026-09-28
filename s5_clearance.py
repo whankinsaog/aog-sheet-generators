@@ -1,6 +1,6 @@
 """Sheet SP-2 — Generator placement, clearances & mechanical screening.
 
-THIS COPY IS POPULATED FOR: 614 5th Ave. N, Naples FL 34102
+THIS COPY IS POPULATED FOR: 456 Sample Ave N, Naples FL 34102
 
 SCREEN_TYPE = "planter" is a fourth screening condition added on this job:
 the generator sits on an ELEVATED concrete mechanical deck and is screened by
@@ -173,7 +173,7 @@ HATCH = Color(.72, .72, .72)
 VEGC = Color(.13, .38, .16)
 TBW, M = 250, 18
 
-OUT = "out/SP-2 Generator Placement Clearances and Screening - 614 5th Ave N.pdf"
+OUT = "out/SP-2 Generator Placement Clearances and Screening - 456 Sample Ave N.pdf"
 c = canvas.Canvas(OUT, pagesize=(W, H))
 box(c, M, M, W - 2 * M, H - 2 * M, lw=1.6)
 

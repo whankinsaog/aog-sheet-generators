@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # =============================================================================
 # G-1 GAS PIPING ISOMETRIC - reusable sheet generator
-# First built on 112 1st Ave N, Naples FL (Sept 2026).  Reviewed line by line
+# First built on 101 Demo Ave N, Naples FL (Sept 2026).  Reviewed line by line
 # by Brandon on that job; this layout is the approved one.
 #
-# THIS COPY IS POPULATED FOR:  1264 WHITEHEART AVE, MARCO ISLAND  (Sept 2026)
+# THIS COPY IS POPULATED FOR:  202 TEST AVE, MARCO ISLAND  (Sept 2026)
 #   1,000 gal U.G. LP tank -> 26 kW air-cooled generator, tankless W.H.,
 #   pool heater, and an interior attic CSST run to cooktop + dryer.
 #
@@ -42,8 +42,8 @@ import os
 import re
 
 # ------------------------------------------------------------- job identity
-ADDR = "1264 WHITEHEART AVENUE, MARCO ISLAND, FL 34145"
-LEGAL = "LOT 41, BLOCK 206, MARCO BEACH UNIT 7"
+ADDR = "202 TEST AVENUE, MARCO ISLAND, FL 34145"
+LEGAL = "LOT 00, BLOCK 000, EXAMPLE SUBDIVISION"
 COUNTY = "COLLIER COUNTY, FLORIDA"
 SHEET_DATE = None                                  # None -> aoglib DATE_SHORT
 SHEET_NO = "G-1"

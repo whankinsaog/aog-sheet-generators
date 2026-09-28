@@ -5,7 +5,7 @@ These are the **source of truth for how an AOG permit sheet looks**. The
 `permit-packet` skill describes the decisions behind them; this folder is what
 actually draws them.
 
-First built on **3085 Fort Charles Dr, Naples** (Sept 2026). Every layout choice
+First built on **789 Placeholder Dr, Naples** (Sept 2026). Every layout choice
 in here was reviewed by Brandon on that job.
 
 ## The sheets
@@ -32,7 +32,7 @@ not drawn in reportlab. It is 17×11 and monochrome — colour on gas linework
 reads as a second pipe material. It still follows the house rules: title block
 bottom-right, no licence numbers, no personal names. It reads `aoglib` for the
 job date and address when they are left as `None` at the top of the file, so it
-cannot disagree with the rest of the package. First built on **112 1st Ave N,
+cannot disagree with the rest of the package. First built on **101 Demo Ave N,
 Naples** (Sept 2026) and reviewed line by line by Brandon on that job.
 
 **`s10_padstand.py` is the first sheet in the stack somebody else seals.** It is
@@ -71,7 +71,7 @@ then refuses to stamp if the number would land on existing content.
 ## Overlaying someone else's PDF
 
 `s1_siteplan.py` and `s8_sheetnum.py` both composite onto a source PDF. Use
-**pikepdf `page.add_overlay()`**, not pypdf's `merge_page`: on the 614 5th Ave
+**pikepdf `page.add_overlay()`**, not pypdf's `merge_page`: on the 456 Sample Ave
 survey, `merge_page` concatenated the two content streams and emitted an invalid
 `QQ` operator that silently killed the whole page — it rendered as the untouched
 original, so it looked like nothing had happened rather than like an error.
@@ -257,7 +257,7 @@ box with no warning — `²`, `φ`, `◀`, `◂` have all bitten. Test with
 
 ## Portable generator inlet + interlock jobs — `s2_riser_inlet.py`, `s1_siteplan_inlet.py`
 
-First built on **1912 Jung Blvd E, Naples (Collier County)**, Sept 2026. A
+First built on **123 Example St, Naples (Collier County)**, Sept 2026. A
 different riser, not a variant of `s2_riser.py`: no ATS, no generator feeder,
 no load shed. The listed CSED interlock kit (Square D RCGK2 on a Homeline RC-series meter-main here — the QCGK3 is QO/QOA only; match the kit to the CSED series on the label) is the
 transfer equipment, NEC 702.5, and the backfed breaker is secured per 408.36(D).

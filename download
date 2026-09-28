@@ -1,0 +1,14 @@
+# generated sheets
+out/
+gas_iso.*
+# customer surveys / site plans (job-specific, keep off GitHub)
+input/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# secrets
+.env

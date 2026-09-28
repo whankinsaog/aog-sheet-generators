@@ -1,6 +1,6 @@
 """Sheet E-1 — generator riser diagram.
 
-THIS COPY IS POPULATED FOR: 614 5th Ave. N, Naples FL 34102
+THIS COPY IS POPULATED FOR: 456 Sample Ave N, Naples FL 34102
 
 Correction response: the GENERATOR changes from a Generac 48 kW to a KOHLER
 48RCLC. This is NOT a revision to an issued permit — the application was kicked
@@ -40,7 +40,7 @@ RED = Color(.78, .05, .09)
 ORNG = Color(.76, .38, .08)
 TBW, M = 250, 18
 
-OUT = "out/E-1 Riser Diagram - 614 5th Ave N.pdf"
+OUT = "out/E-1 Riser Diagram - 456 Sample Ave N.pdf"
 c = canvas.Canvas(OUT, pagesize=(W, H))
 box(c, M, M, W - 2 * M, H - 2 * M, lw=1.6)
 

@@ -1,6 +1,6 @@
 """Fill Always On Generators' Scope of Work template.
 
-THIS COPY IS POPULATED FOR: 1912 Jung Blvd E, Naples FL 34120 (Collier County)
+THIS COPY IS POPULATED FOR: 123 Example St, Naples FL 34120 (Collier County)
                             NEW PERMIT — electric only: portable generator inlet +
                             Square D RCGK2 interlock. No fuel gas, no load calc
                             (manual transfer, NEC 702.4(B)(1)).
@@ -26,7 +26,7 @@ from reportlab.pdfgen import canvas
 from aoglib import DATE_SHORT, FBC_TITLE, NEC_EDITION
 
 SRC = "Scope of Work.pdf"
-OUT = "out/Scope of Work - 1912 Jung Blvd E.pdf"
+OUT = "out/Scope of Work - 123 Example St.pdf"
 
 W, H = 612.0, 792.0
 VX = 320.0                      # x for the three header values
@@ -34,14 +34,14 @@ LX, RX = 56.0, 572.0            # description text column
 TOP, BOT = 506.0, 236.0         # usable vertical band for the description
 
 DATE = DATE_SHORT
-LOCATION = "1912 Jung Blvd E, Naples, Florida 34120"
+LOCATION = "123 Example St, Naples, Florida 34120"
 PROJECT = "Portable Generator Inlet & Interlock — Electrical"
 
 BODY = [
     ("p", "Install a 50 A portable generator power inlet and a listed generator "
           "interlock kit in the existing 200 A Square D Homeline RC-series meter-main at an "
-          "existing single-family dwelling, Parcel 37393720002, West 1/2 of Tract "
-          "49, Golden Gate Estates Unit 16. Transfer is manual."),
+          "existing single-family dwelling, Parcel 00000000000, Tract "
+          "00, Example Subdivision. Transfer is manual."),
     ("h", "WORK INCLUDED IN THIS PERMIT:"),
     ("n", "Install one (1) Square D RCGK2 generator interlock kit in the existing "
           "meter-main, with a 50 A 2-pole HOM backfed generator breaker in positions "

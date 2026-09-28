@@ -1,4 +1,4 @@
-"""E-3 / E-4 Load Calculation — 3085 Fort Charles Dr.
+"""E-3 / E-4 Load Calculation — 789 Placeholder Dr.
 
 Inventory (what exists, quantities, circuits) : RCI Engineering Sheet E5.
 VA per item                                   : AOG Load Calculation library.
@@ -27,7 +27,7 @@ TOP = 692.0
 RH = 11.5
 FS = 7.2
 
-ADDR = ["3085 Fort Charles Dr", "Naples, FL 34102"]
+ADDR = ["789 Placeholder Dr", "Naples, FL 34102"]
 from aoglib import DATE_LONG, NEC_SHORT, note
 DATESTR = DATE_LONG
 V = 240.0
@@ -257,7 +257,7 @@ def build(managed):
 
     tag = "Managed" if managed else "Unmanaged"
     sheet = "E-4" if managed else "E-3"
-    out = "out/%s Load Calculation - %s - 3085 Fort Charles Dr.pdf" % (sheet, tag)
+    out = "out/%s Load Calculation - %s - 789 Placeholder Dr.pdf" % (sheet, tag)
     c = canvas.Canvas(out, pagesize=(W, H))
 
     c.setStrokeColor(ORANGE)

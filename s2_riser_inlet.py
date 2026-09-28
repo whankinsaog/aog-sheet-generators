@@ -1,6 +1,6 @@
 """Sheet E-1 — riser diagram, PORTABLE GENERATOR INLET + CSED INTERLOCK variant.
 
-THIS COPY IS POPULATED FOR: 1912 Jung Blvd E, Naples FL 34120 (Collier County)
+THIS COPY IS POPULATED FOR: 123 Example St, Naples FL 34120 (Collier County)
 
 The configuration this script draws (new to the stack, first built on this job):
   * EXISTING 200 A Square D Homeline RC-series meter-main (CSED). Its 200 A main is the
@@ -36,7 +36,7 @@ ORNG = Color(.76, .38, .08)
 OWN = Color(.55, .55, .55)
 TBW, M = 250, 18
 
-OUT = "out/E-1 Riser Diagram - 1912 Jung Blvd E.pdf"
+OUT = "out/E-1 Riser Diagram - 123 Example St.pdf"
 c = canvas.Canvas(OUT, pagesize=(W, H))
 box(c, M, M, W - 2 * M, H - 2 * M, lw=1.6)
 PLACED = []          # (x0, y0, x1, y1, name) of every tag, for collision asserts

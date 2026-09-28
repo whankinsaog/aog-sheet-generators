@@ -1,6 +1,6 @@
 """SP-1 — site plan markup, corrected for the Kohler correction response.
 
-THIS COPY IS POPULATED FOR: 614 5th Ave. N, Naples FL 34102
+THIS COPY IS POPULATED FOR: 456 Sample Ave N, Naples FL 34102
 
 This does NOT redraw the site plan. It overlays the customer's existing marked
 survey and masks only the two regions whose content is now wrong — the callout
@@ -23,9 +23,8 @@ from reportlab.lib.colors import Color
 from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfgen import canvas
 
-SRC = ("/root/.claude/uploads/569a4510-648c-51fb-aa1f-ee573159dea5/"
-       "b5a74755-site-plan.pdf")
-OUT = "out/SP-1 Site Plan - 614 5th Ave N.pdf"
+SRC = str(Path(__file__).resolve().parent / "input" / "site-plan.pdf")  # put the customer's survey here
+OUT = "out/SP-1 Site Plan - 456 Sample Ave N.pdf"
 
 # sampled from the source raster so the patch is indistinguishable
 GREEN = Color(24 / 255, 255 / 255, 39 / 255)
